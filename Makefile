@@ -1,6 +1,9 @@
 build:
 	dotnet build
 
+build-trim:
+	dotnet publish -r osx-x64 -p:PublishTrimmed=True -p:TrimMode=CopyUsed -c Release -o out
+
 run:
 	dotnet run --project WebApi
 

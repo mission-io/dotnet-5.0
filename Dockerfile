@@ -5,6 +5,8 @@ COPY *.sln .
 COPY . .
 RUN dotnet restore
 RUN dotnet publish -c Release -o out
+# For Optimzed build
+# RUN dotnet publish -r linux-x64 -p:PublishTrimmed=True -p:TrimMode=CopyUsed -c Release -o out
 
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS runtime
 WORKDIR /app
