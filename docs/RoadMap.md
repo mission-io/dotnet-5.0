@@ -11,9 +11,9 @@
 ## TODO
 1. DDD
 2. Entity Framework (MsSql / MySql / PostgreSql) - Unit Of work & Repository Pattern
-3. Mapper - AutoMapper
-4. Multi Tenant
-5. Loggin - Serilog/
+3. Mapper - AutoMapper / 
+4. Multi Tenant Implementation
+5. Loggin - Fuentd / Serilog 
 6. Validator
 7. Cache - Redis / InMemory
 8. CORS
